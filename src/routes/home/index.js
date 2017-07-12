@@ -25,7 +25,8 @@ export default class Home extends Component {
           <Entity geometry={{primitive: 'box'}} material={{color: '#4CC3D9'}} position={{x: -1, y: 0.5, z: 1}} />
           <Entity geometry={{primitive: 'sphere', radius: 1.25}} material={{color: '#EF2D5E'}} position={{x: 0, y: 1.25, z: -1}} />
           <Entity geometry={{primitive: 'cylinder', height: 1.5}} material={{color: '#FFC65D'}} position={{x: 1, y: 0.75, z: 1}} />
-          <Entity geometry={{primitive: 'plane', width: 4, height: 4}} material={{color: '#7BC8A4'}} position={{x: 0, y: 0, z: 0}} rotation={{x: -90, y: 0, z: 0}} />
+          <Entity geometry={{primitive: 'plane', width: 4, height: 4}} material={{color: '#7BC8A4', side: 'double'}} position={{x: 0, y: 0, z: 0}} rotation={{x: -90, y: 0, z: 0}} />
+          <Entity primitive="a-sky" color="#ECECEC" />
         </Entity>
       </Scene>
     );
