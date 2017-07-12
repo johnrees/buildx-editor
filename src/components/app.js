@@ -3,9 +3,7 @@ import { Router } from 'preact-router';
 
 import Header from './header';
 import Home from '../routes/home';
-import Profile from '../routes/profile';
-// import Home from 'async!./home';
-// import Profile from 'async!./profile';
+// import Editor from 'async!./editor';
 
 export default class App extends Component {
 	/** Gets fired when the route changes.
@@ -20,11 +18,11 @@ export default class App extends Component {
 		return (
 			<div id="app">
 				<Header />
-				<Router onChange={this.handleRoute}>
-					<Home path="/" />
-					<Profile path="/profile/" user="me" />
-					<Profile path="/profile/:user" />
-				</Router>
+				<main>
+					<Router onChange={this.handleRoute}>
+						<Home path="/" />
+					</Router>
+				</main>
 			</div>
 		);
 	}
