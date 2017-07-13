@@ -126,6 +126,14 @@ acorn@^5.0.0, acorn@^5.0.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.1.1.tgz#53fe161111f912ab999ee887a90a0bc52822fd75"
 
+aframe-extrude-svg-component@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/aframe-extrude-svg-component/-/aframe-extrude-svg-component-0.0.3.tgz#555a9c21463e915f1e3f638247dd431e610991ee"
+
+"aframe-orbit-controls-component-2@https://github.com/johnrees/aframe-orbit-controls-component#vec3-fix":
+  version "0.1.8"
+  resolved "https://github.com/johnrees/aframe-orbit-controls-component#db0a6f63b993bba279cda805ac5b1a4333b77c35"
+
 aframe-react@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/aframe-react/-/aframe-react-4.3.0.tgz#43eba68be4a1e88830aac404e90ac033945fbf54"
@@ -4612,6 +4620,10 @@ liftoff@^2.1.0:
     lodash.mapvalues "^4.4.0"
     rechoir "^0.6.2"
     resolve "^1.1.7"
+
+linkstate@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/linkstate/-/linkstate-1.0.1.tgz#540251e313dc477a3c9fa90b99f51edf7da02776"
 
 load-bmfont@^1.2.3:
   version "1.3.0"

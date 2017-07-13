@@ -24,7 +24,10 @@
   },
   "dependencies": {
     "aframe": "^0.6.0",
+    "aframe-extrude-svg-component": "^0.0.3",
+    "aframe-orbit-controls-component-2": "https://github.com/johnrees/aframe-orbit-controls-component#vec3-fix",
     "aframe-react": "^4.3.0",
+    "linkstate": "^1.0.1",
     "preact": "^8.2.1",
     "preact-compat": "^3.16.0",
     "preact-router": "^2.5.4"
