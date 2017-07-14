@@ -108,6 +108,12 @@ export default function Preview({width, height, wallHeight, frameWidth}) {
     firstPoints(outerCorners, innerCorners, fifthPoints)
   )
 
+  const bounds = compose(SVG.getBounds, firstPoints(outerCorners, innerCorners, fifthPoints))(0)
+  console.log(SVG.closedPath(firstPoints(outerCorners, innerCorners, fifthPoints)(4).map( ([x,y]) => [ (x-bounds.minX)/100, (y-bounds.minY)/100])))
+
+  // const bounds2 = compose(SVG.getBounds, firstPoints(outerCorners, innerCorners, fifthPoints))(0)
+  // console.log(SVG.closedPath(firstPoints(outerCorners, innerCorners, fifthPoints)(3).map( ([x,y]) => [ (x-bounds.minX)/100, (y-bounds.minY)/100])))
+
   return(
     <svg xmlns="http://www.w3.org/2000/svg" viewBox={viewBoxFromPoints(outerCorners)} class={style.svg}>
       <g fill="yellow"><path d={firstPath(0)}></path></g>

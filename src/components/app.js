@@ -2,6 +2,7 @@ import { h, Component } from 'preact';
 import { Router } from 'preact-router';
 
 import Header from './header';
+import Controls from './controls';
 import Home from '../routes/home';
 import SVG from '../routes/svg';
 
@@ -14,6 +15,7 @@ export default class App extends Component {
 	state = {
     width: 550,
     height: 550,
+    length: 1000,
     wallHeight: 340,
     frameWidth: 10
   }
@@ -35,10 +37,11 @@ export default class App extends Component {
 				<Header />
 				<main>
 					<Router onChange={this.handleRoute}>
-						<Home path="/" />
-						<SVG path="/svg" up={this.up} {...this.state} />
+						<Home path="/" {...this.state} />
+						<SVG path="/svg" {...this.state} />
 					</Router>
 				</main>
+				<Controls up={this.up} {...this.state} />
 			</div>
 		);
 	}
