@@ -1,8 +1,10 @@
+import style from './style';
+
 export default function Controls({width, height, length, up}) {
   const floorArea = width*length;
 
   return(
-    <div id="controls">
+    <div id="controls" class={style.controls}>
       <ul>
         <li>
           <label>Width <input type="range" min={300} max={700} step={1} value={width} onInput={(e)=> up(e, 'width')} /></label>
