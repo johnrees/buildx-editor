@@ -7,7 +7,8 @@ export default class Header extends Component {
 		return (
 			<header class={style.header}>
 				<nav>
-					<Link activeClassName={style.active} href="/">Editor</Link>
+					<Link activeClassName={style.active} href="/">3D Editor</Link>
+          <Link activeClassName={style.active} href="/svg">SVG Editor</Link>
 				</nav>
 			</header>
 		);
