@@ -3,9 +3,9 @@ import { Router } from 'preact-router';
 
 import Header from './header';
 import Controls from './controls';
+
 import Home from '../routes/home';
 import SVG from '../routes/svg';
-
 // import Editor from 'async!./editor';
 
 export default class App extends Component {
@@ -26,10 +26,9 @@ export default class App extends Component {
 		this.currentUrl = e.url;
 	};
 
-	up = (e, key) => this.setState({ [key]: parseInt(e.target.value) })
+	up = (e, key, wrapper=()=>{} ) => this.setState({ [key]: wrapper(e.target.value) })
 
 	render() {
-		// console.log(this.state)
 		return (
 			<div id="app">
 				<Header />
