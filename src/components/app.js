@@ -6,8 +6,6 @@ import Controls from './controls';
 import Home from '../routes/home';
 import SVG from '../routes/svg';
 
-import linkState from 'linkstate';
-
 // import Editor from 'async!./editor';
 
 export default class App extends Component {
