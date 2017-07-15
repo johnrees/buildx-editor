@@ -126,10 +126,6 @@ acorn@^5.0.0, acorn@^5.0.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.1.1.tgz#53fe161111f912ab999ee887a90a0bc52822fd75"
 
-aframe-extrude-svg-component@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/aframe-extrude-svg-component/-/aframe-extrude-svg-component-0.0.3.tgz#555a9c21463e915f1e3f638247dd431e610991ee"
-
 "aframe-orbit-controls-component-2@https://github.com/johnrees/aframe-orbit-controls-component#vec3-fix":
   version "0.1.8"
   resolved "https://github.com/johnrees/aframe-orbit-controls-component#db0a6f63b993bba279cda805ac5b1a4333b77c35"
@@ -2848,6 +2844,10 @@ event-stream@~3.3.0:
 eventemitter3@1.x.x:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-1.2.0.tgz#1c86991d816ad1e504750e73874224ecf3bec508"
+
+eventemitter3@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-2.0.3.tgz#b5e1079b59fb5e1ba2771c0a993be060a58c99ba"
 
 events-to-array@^1.0.1:
   version "1.1.2"
